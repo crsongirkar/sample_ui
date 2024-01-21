@@ -1,0 +1,376 @@
+html, body {
+    overflow: auto;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background-color: hsla(0, 78%, 2%, 0.925);
+}
+
+ .Categories {
+         display: inline-flex; /* Change 'fit' to 'inline-flex' */
+         flex-direction: column;
+         padding: 12px;
+         color: #fff;
+         width: 100%;
+         margin-left: 1px;
+    }
+
+.Categories h1{
+    margin-left: 3%;
+    
+}
+
+.category-buttons {
+    display: flex;
+    flex-wrap: nowrap;
+    
+    width: 100%;
+    margin-left: 3%;
+    padding-bottom: 10px;
+    position: relative;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+.category-button {
+    display: flex;
+    width: 48%;
+    flex-direction: column;
+    margin: 15px;
+    padding: 25px 35px;
+    background-color: #1c1c1d;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 29px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.category-icon {    
+    font-size: 0px;
+    margin-bottom: 15px;
+}
+
+.category-button:hover {
+   background-color: rgb(197, 28, 28);
+}
+.section-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Ongoing {
+    display: flex;
+    flex-direction: row; /* Set flex direction to row for horizontal alignment */
+    align-items: left;
+    padding: 1px;
+    color: #fff;
+    width: 100%;
+}
+.Ongoing h2{
+   
+    margin-left: 2%;
+    padding: 0px;
+    /* position: relative; */
+}
+
+.card {
+    width: 100%; 
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 77px;
+    margin-bottom: 5%;
+    width: 310px;
+    height: 360px;
+    border-radius: 20px;
+    background-color: hsl(0, 2%, 12%);
+    box-shadow: 0 0 20px rgb(219, 217, 216);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    right: 10%;
+    left: 10%;
+}
+  
+.horizontal-scroll-wrapper {
+    overflow-x: auto;
+    max-width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+     
+}
+.card.card{
+    margin-left: 2%;   
+    
+}
+
+.horizontal-scroll {
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 15px;
+    
+}
+
+.horizontal-scroll .card {
+    display: inline-block;
+    margin: 0 10px;
+    
+}
+
+
+.full-image {
+    width: 100%;
+    height: 200px;
+    image-resolution: 100%;
+    overflow: hidden;
+    border-radius: 25px;
+}
+
+.full-image img {
+    width: 320px;
+    height: 200px;
+    object-fit: fit;
+}
+
+.user-photo {
+    width: 85px;
+    height: 75px;
+    position:absolute;
+    display: flex;
+    bottom: 40%;
+    left: 270px;
+    transform: translateX(-50%);
+    border-radius: 10%;
+    overflow: hidden;
+}
+
+.user-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 60%;
+}
+
+.card-text {
+    text-align: center;
+    color: #fff;
+    width: 100%;
+    padding: 1px;
+    border-radius: 0 0 15px 15px;
+}
+
+.text-below-image {
+    margin: 10px;
+}
+
+/* Media Query for screens smaller than 600px */
+
+img {
+    border-radius: 10%;
+}
+.upcoming {
+    display: flex;
+    flex-direction: row; /* Set flex direction to row for horizontal alignment */
+    align-items: left;
+    padding: 13px;
+    color: #fff;
+    width: 100%;
+    inline-size: none;
+}
+.upcoming h2{
+    margin-left: 2%;
+    padding: 0px;
+}
+
+/* Horizontal scrolling styles */
+::-webkit-scrollbar {
+    width: 2px;
+    height: 2px;
+}
+
+::-webkit-scrollbar-button {
+    width: 12px;
+    height: 2px;
+}
+
+div {
+    box-sizing: border-box;
+}
+
+body {
+    background: #111;
+}
+
+
+/* .horizontal-scroll-wrapper {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 80px;
+    max-height: 500px;
+    margin: 0;
+    background: rgb(70, 138, 206);
+    overflow-y: auto;
+    overflow-x: hidden;
+    transform: rotate(-90deg) translateY(-80px);
+    transform-origin: right top;
+} */
+
+/* .horizontal-scroll-wrapper > div {
+    display: flex;
+    padding: 50px;
+    background: #cab;
+    transform: rotate(90deg);
+    transform-origin: right top;
+} */
+
+.squares {
+    padding: 60px 0 0 0;
+}
+
+.squares > div {
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+}
+
+.rectangles {
+    top: 100px;
+    padding: 100px 0 0 0;
+}
+
+.rectangles > div {
+    width: 0px;
+    height: 60px;
+    margin: 50px 10px;
+    padding: 5px;
+    background: #cab;
+    transform: rotate(90deg) translateY(180px);
+    transform-origin: right top;
+}
+.whoose-button{
+    display: flex;
+    width: 48%;
+    flex-direction: column;
+    margin: 15px;
+    padding: 15px 25px;
+    align-items: center;
+    background-color: #ec0d0d;
+    color: #fff;
+    bottom: 0;
+    left: 0;
+    text-decoration: none;
+    border: none;
+    border-radius: 29px;
+    transition: background-color white;
+}
+
+  /* Vertical Navigation Bar Styles */
+  .vertical-nav {
+    box-shadow: 0 0 50px rgba(255, 255, 255, 0.986);
+    position: fixed;
+    top: 0%;
+    right: 0;
+    height: 100%;
+    width: 0;
+    background-color: hsla(0, 78%, 2%, 0.925);
+    overflow-x: hidden;
+    transition: 0.5s;
+   padding-top: 60px; /* Adjusted padding to align with the top of the page */
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Align items to the start of the container */
+    padding-bottom: 20px;
+}
+
+.vertical-nav a, .vertical-nav img {
+    text-decoration: none;
+    font-size: 16px; 
+    color: rgb(233, 233, 233);
+    display: block;
+    margin-bottom: 5%;
+    transition: 0.2s;
+    cursor: show;
+}
+
+.vertical-nav a:hover {
+    color: #f50808;
+}
+
+.vertical-nav .close-btn {
+    font-size: 30px;
+    padding-top: 10%;
+    color: #f7eeee;
+}
+
+.open-btn {
+    font-size: 25px;
+    cursor: pointer;
+    background-color: #2b2a2a;
+    color: #e0dede;
+    padding: 10px 15px;
+    border: none;
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    z-index: 2;
+    top: 10px;
+     right: 10px;
+}
+
+.open-btn:hover {
+    background-color: #0a0201;
+}
+
+.user-image {
+    width: 85px;
+    height: 80px;
+    border-radius: 100%;
+    margin: 20px auto; /* Adjusted margin to move the user image to the top */
+    overflow: hidden;
+    cursor: pointer; /* Add cursor pointer for clickable effect */
+}
+
+.user-image img {
+    margin-top: 1%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.plus-icon {
+    width: 30px;
+    height: 30px;
+    margin: 10px auto;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.plus-icon {
+    background-color: red;
+    border-radius: 150%;
+    padding: 5px;
+}
+.message-bt{
+    text-align: center;
+    box-sizing: border-box;
+    border-radius: 20%;
+    padding-top: 30%;
+ }
+ .Add-bt{
+    padding-top: 280%;
+    
+
+ }
